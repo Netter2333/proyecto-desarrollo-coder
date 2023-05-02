@@ -161,6 +161,18 @@ footer h1 {
 }
 
 
+/* ============ AYUDA ========== */
+
+.faq {
+    display: flex;
+    height: 20vh;
+    width: 50vh;
+    align-items: baseline;
+    justify-content: center;
+    
+
+}
+
 /* ============ Media Queries ========== */
 /* Small devices (landscape phones) */
 @media only screen and (max-width: 480px) {
