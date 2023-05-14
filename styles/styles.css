@@ -11,8 +11,8 @@ ol {
 }
 
 body {
-  line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -25,6 +25,8 @@ a {
 header a {
     text-decoration: none;
     color: black;
+    display: flex;
+    align-items: center;
 }
 
 header {
@@ -41,9 +43,23 @@ header {
     display: flex;
     gap: 40px;
     padding-left: 5px;
-    
+
 }
 
+/* .middle-nav {
+    box-sizing: unset;
+    font-size: 15px;
+}
+ */
+ 
+.search{
+    border-radius: 12px;
+}
+
+.align-nav{
+    display: flex;
+    margin: auto;
+}
 
 
 header input[type=text] {
@@ -51,7 +67,7 @@ header input[type=text] {
     margin-top: 8px;
     font-size: 17px;
     border: none;
-  }
+}
 
 nav {
     display: flex;
@@ -64,19 +80,22 @@ nav {
     display: flex;
     gap: 25px;
     align-items: center;
-    
+
 }
 
 .nav-list li {
-    background-color: #e7e7e7; 
+    background-color: #e7e7e7;
     color: black;
-    
     text-align: center;
     width: 100px;
     height: 30px;
     border: 1px solid black;
     overflow: hidden;
-} 
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 6px;
+}
 
 
 /* ============ INDEX ========== */
@@ -107,20 +126,21 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .productos-titulo {
-    background-color: rgb(96, 116, 116);
+    background-color: rgb(93, 165, 165);
     text-align: center;
     padding: 15px;
+    color: #e7e7e7;
 }
 
 .tarjeta {
-    border: 5px solid black;
-
+    border: 2px solid black;
     width: 280px;
     height: 350px;
-
     border-radius: 15px;
     overflow: hidden;
 }
@@ -153,53 +173,101 @@ nav {
 /* ============ FOOTER ========== */
 
 footer {
-    background-color: rgb(34, 42, 160);
+    background-color: rgb(64, 72, 190);
+    text-align: center;
+
 }
 
 footer h1 {
     color: white;
 }
 
+.fa-square-phone{
+    color: #e7e7e7;
+    margin: 10px;
+}
+
+.fa-camera{
+    color: #e7e7e7;
+    margin: 2px;
+}
+
 
 /* ============ AYUDA ========== */
 
-.faq {
+/* .faq {
     display: flex;
     height: 20vh;
     width: 50vh;
     align-items: baseline;
     justify-content: center;
-    
 
+
+} */
+
+.titulo-ayuda {
+    background-color: rgb(216, 143, 94);
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+    color: #e7e7e7;
+}
+
+.titulo-faq {
+    background-color: rgb(216, 94, 191);
+    text-align: center;
+    padding: 5px;
+    margin-top: 0;
+    color: #e7e7e7;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 28px;
 }
 
 /* ============ Media Queries ========== */
-/* Small devices (landscape phones) */
-@media only screen and (max-width: 480px) {
+/* Small and medium small devices (landscape phones) */
+@media only screen and (max-width: 680px) {
     header {
-    padding: 10px;
+        padding: 10px;
     }
-    
-    .top-nav {
-    display: none;
-    }
-    
+
+
     header input[type="text"] {
-    font-size: 14px;
+        font-size: 14px;
     }
+
+
     
-    .nav-list li {
-    width: 80px;
-    font-size: 12px;
-    }
-    
+
     .tarjeta {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 20px;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
     }
-    
+
     .tarjetas-destacados {
-    flex-direction: column;
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-list li {
+        width: 80px;
+        font-size: 11px;
+    }
+
+    .toggle-button {
+        display: block;
     }
 }
