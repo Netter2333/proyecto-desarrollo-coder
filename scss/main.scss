@@ -22,12 +22,6 @@ a {
 
 
 /* --------- Header -------- */
-header a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-}
 
 header {
     background-color: rgba(65, 117, 177, 0.89);
@@ -37,6 +31,14 @@ header {
     justify-content: center;
     align-items: baseline;
     flex-direction: column;
+
+    a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+    }
+    
 }
 
 .top-nav {
@@ -81,21 +83,22 @@ nav {
     gap: 25px;
     align-items: center;
 
+    li {
+        background-color: #e7e7e7;
+        color: black;
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        border: 1px solid black;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 6px;
+    }
+
 }
 
-.nav-list li {
-    background-color: #e7e7e7;
-    color: black;
-    text-align: center;
-    width: 100px;
-    height: 30px;
-    border: 1px solid black;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    border-radius: 6px;
-}
 
 
 /* ============ INDEX ========== */
@@ -176,11 +179,13 @@ footer {
     background-color: rgb(64, 72, 190);
     text-align: center;
 
+    h1 {
+        color: white;
+    }
+
 }
 
-footer h1 {
-    color: white;
-}
+
 
 .fa-square-phone{
     color: #e7e7e7;
@@ -260,11 +265,12 @@ footer h1 {
     .nav-list {
         flex-direction: column;
         gap: 10px;
-    }
 
-    .nav-list li {
-        width: 80px;
-        font-size: 11px;
+        li {
+            width: 80px;
+            font-size: 11px;
+        }
+
     }
 
     .toggle-button {

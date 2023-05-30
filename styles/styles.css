@@ -20,13 +20,6 @@ a {
 }
 
 /* --------- Header -------- */
-header a {
-  text-decoration: none;
-  color: black;
-  display: flex;
-  align-items: center;
-}
-
 header {
   background-color: rgba(65, 117, 177, 0.89);
   padding: 15px;
@@ -34,6 +27,12 @@ header {
   justify-content: center;
   align-items: baseline;
   flex-direction: column;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
 }
 
 .top-nav {
@@ -75,7 +74,6 @@ nav {
   gap: 25px;
   align-items: center;
 }
-
 .nav-list li {
   background-color: #e7e7e7;
   color: black;
@@ -157,7 +155,6 @@ footer {
   background-color: rgb(64, 72, 190);
   text-align: center;
 }
-
 footer h1 {
   color: white;
 }
