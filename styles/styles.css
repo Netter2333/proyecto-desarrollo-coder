@@ -1,7 +1,7 @@
-/* Reseteo de CSS */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul,
@@ -78,7 +78,7 @@ nav {
   background-color: #e7e7e7;
   color: black;
   text-align: center;
-  width: 100px;
+  width: 110px;
   height: 30px;
   border: 1px solid black;
   overflow: hidden;
@@ -126,14 +126,13 @@ nav {
   height: 350px;
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .tarjeta img {
   width: 100%;
   height: 70%;
   object-fit: cover;
 }
-
 .tarjeta-cuerpo {
   height: 25%;
   display: flex;
@@ -141,13 +140,29 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+.tarjeta:hover {
+  animation: cardScale 0.5s ease-in-out forwards;
+}
 
+@keyframes cardScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .btn {
   background-color: cadetblue;
   padding: 10px 20px;
   border-radius: 20px;
   color: white;
-  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 
 /* ============ FOOTER ========== */
@@ -186,7 +201,6 @@ footer h1 {
   padding: 15px;
   color: #e7e7e7;
 }
-
 .titulo-faq {
   background-color: rgb(216, 94, 191);
   text-align: center;
@@ -206,6 +220,35 @@ footer h1 {
   height: 28px;
 }
 
+.containerfaq .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px;
+}
+.containerfaq .row article {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.containerfaq .row article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.containerfaq .row article p {
+  font-size: 16px;
+  color: #666;
+}
+@media (min-width: 768px) {
+  .containerfaq .row article {
+    width: calc(50% - 30px);
+  }
+}
+
 /* ============ Media Queries ========== */
 /* Small and medium small devices (landscape phones) */
 @media only screen and (max-width: 680px) {
@@ -216,6 +259,11 @@ footer h1 {
     font-size: 14px;
   }
   .tarjeta {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .tarjetavip {
     width: 100%;
     height: 300px;
     margin-bottom: 20px;
