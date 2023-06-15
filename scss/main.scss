@@ -89,7 +89,7 @@ nav {
     &-imagen {
 
         background-color: tomato;
-        height: 18.9vh;
+        height: 30.9vh;
         width: 100%;
         background-image: url("../img/computer-sales-and-services.jpg");
         background-size: cover;
@@ -119,15 +119,20 @@ nav {
     gap: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
+    
 }
 
 .productos {
-    
+
+
     &-titulo {
         background-color: rgb(93, 165, 165);
         text-align: center;
         padding: 15px;
         color: #e7e7e7;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
     }
     
 }
@@ -237,6 +242,8 @@ footer {
         margin-bottom: 0;
         padding: 15px;
         color: #e7e7e7;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     &-faq {
@@ -303,7 +310,7 @@ footer {
 
 
     header input[type="text"] {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 
@@ -311,8 +318,9 @@ footer {
 
     .tarjeta {
         width: 100%;
-        height: 300px;
+        height: auto;
         margin-bottom: 20px;
+        
     }
 
     .tarjetavip {

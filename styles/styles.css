@@ -92,7 +92,7 @@ nav {
 /* ------------ Portada ---------- */
 .portada-imagen {
   background-color: tomato;
-  height: 18.9vh;
+  height: 30.9vh;
   width: 100%;
   background-image: url("../img/computer-sales-and-services.jpg");
   background-size: cover;
@@ -118,6 +118,9 @@ nav {
   text-align: center;
   padding: 15px;
   color: #e7e7e7;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .tarjeta {
@@ -200,6 +203,8 @@ footer h1 {
   margin-bottom: 0;
   padding: 15px;
   color: #e7e7e7;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .titulo-faq {
   background-color: rgb(216, 94, 191);
@@ -256,11 +261,11 @@ footer h1 {
     padding: 10px;
   }
   header input[type=text] {
-    font-size: 14px;
+    font-size: 12px;
   }
   .tarjeta {
     width: 100%;
-    height: 300px;
+    height: auto;
     margin-bottom: 20px;
   }
   .tarjetavip {
